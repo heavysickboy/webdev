@@ -47,9 +47,55 @@ z++;
   let total = 0 ;
   for (i=0;i<arr.length;++i){
     total = total+arr[i];
-
+console.log(total);
   }
   return total;
  }
  arrfinal=array([1,2,2,3,30]);
- console.log(arrfinal);
+ 
+
+ ////dom manipulation;
+
+ console.log(document.getElementById("thisone"));
+ console.log(document.getElementsByClassName("you"));
+ //arrow function
+
+ const myfunc = (a,b) => {
+console.log(a+b);
+ }
+ myfunc(1,22);
+
+ const arr = [1,2,4,6];
+ console.log(arr);
+//const result = arr.find((value,index) => {
+//if(value>2){return value};
+//});
+//console.log(result);
+//const result = arr.filter((value,index)=>{
+  //if(value<=4){
+   // return value
+  //};
+//});
+//console.log(result);
+//const result = arr.every((value,index)=>{
+//return value>0;
+//});
+//console.log(result);
+
+//const result = arr.some((value,index)=>{
+  //return value>4;
+  //});
+  //console.log(result);
+
+  // for(const value of arr){
+  //   console.log(value);
+  // }
+  // const result= arr.map((value,index) => {
+  //   return value+2;
+  // });
+  // console.log(result);
+
+  const result = arr.reduce((prev,current,currentindex)=>{
+    return prev;
+  });
+  console.log(result);
